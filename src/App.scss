@@ -1,0 +1,13 @@
+@import "./assets/styles/Colors.scss";
+@import "./assets/styles/Header.scss";
+// @import "./assets/styles/main.scss";
+// @import "./assets/styles/loading.scss";
+// @import "./assets/styles/notificationBar.scss";
+// @import "./assets//styles/pagination.scss";
+html,
+body {
+  font-family: "IRANSansXFaNum", sans-serif;
+  direction: rtl;
+  //background-color: $main;
+  //background: $hamta_white; //linear-gradient(90deg, $dark 0%, $white 100%);
+}

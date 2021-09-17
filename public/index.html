@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>آمیتیس همتا</title>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,7 +10,114 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <style type="text/css" media="screen">
+      @font-face {
+        font-family: "WOFF IRANSansXFaNum-Thin";
+        src: url("woff/IRANSansXFaNum-Thin.woff");
+      }
+      @font-face {
+        font-family: "WOFF IRANSansXFaNum-UltraLight";
+        src: url("woff/IRANSansXFaNum-UltraLight.woff");
+      }
+      @font-face {
+        font-family: "WOFF IRANSansXFaNum-Light";
+        src: url("woff/IRANSansXFaNum-Light.woff");
+      }
+      @font-face {
+        font-family: "WOFF IRANSansXFaNum-Regular";
+        src: url("woff/IRANSansXFaNum-Regular.woff");
+      }
+      @font-face {
+        font-family: "WOFF IRANSansXFaNum-Medium";
+        src: url("woff/IRANSansXFaNum-Medium.woff");
+      }
+      @font-face {
+        font-family: "WOFF IRANSansXFaNum-DemiBold";
+        src: url("woff/IRANSansXFaNum-DemiBold.woff");
+      }
+      @font-face {
+        font-family: "WOFF IRANSansXFaNum-Bold";
+        src: url("woff/IRANSansXFaNum-Bold.woff");
+      }
+      @font-face {
+        font-family: "WOFF IRANSansXFaNum-ExtraBold";
+        src: url("woff/IRANSansXFaNum-ExtraBold.woff");
+      }
+      @font-face {
+        font-family: "WOFF IRANSansXFaNum-Black";
+        src: url("woff/IRANSansXFaNum-Black.woff");
+      }
+      @font-face {
+        font-family: "WOFF2 IRANSansXFaNum-Thin";
+        src: url("woff2/IRANSansXFaNum-Thin.woff2");
+      }
+      @font-face {
+        font-family: "WOFF2 IRANSansXFaNum-UltraLight";
+        src: url("woff2/IRANSansXFaNum-UltraLight.woff2");
+      }
+      @font-face {
+        font-family: "WOFF2 IRANSansXFaNum-Light";
+        src: url("woff2/IRANSansXFaNum-Light.woff2");
+      }
+      @font-face {
+        font-family: "WOFF2 IRANSansXFaNum-Regular";
+        src: url("woff2/IRANSansXFaNum-Regular.woff2");
+      }
+      @font-face {
+        font-family: "WOFF2 IRANSansXFaNum-Medium";
+        src: url("wof2f/IRANSansXFaNum-Medium.woff2");
+      }
+      @font-face {
+        font-family: "WOFF2 IRANSansXFaNum-DemiBold";
+        src: url("woff2/IRANSansXFaNum-DemiBold.woff2");
+      }
+      @font-face {
+        font-family: "WOFF2 IRANSansXFaNum-Bold";
+        src: url("woff2/IRANSansXFaNum-Bold.woff2");
+      }
+      @font-face {
+        font-family: "WOFF2 IRANSansXFaNum-ExtraBold";
+        src: url("woff2/IRANSansXFaNum-ExtraBold.woff2");
+      }
+      @font-face {
+        font-family: "WOFF2 IRANSansXFaNum-Black";
+        src: url("woff2/IRANSansXFaNum-Black.woff2");
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Harmattan&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
