@@ -224,7 +224,7 @@
 }
 .aboutText p {
   color: $hamta_blue;
-  font-size: x-large;
+  font-size: 1.5rem;
   margin-top: 1rem;
   font-family: "WOFF IRANSansXFaNum-Black";
 }
@@ -315,6 +315,9 @@
   }
   .aboutText {
     font-size: medium;
+  }
+  .aboutText p {
+    font-size: 1.2rem;
   }
   .aboutContainer {
     display: grid;
