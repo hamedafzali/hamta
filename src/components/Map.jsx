@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 //import "leaflet/dist/leaflet.css";
+import logo from "../assets/images/_logo.png";
 class Map extends Component {
   state = {};
   render() {
@@ -13,13 +14,20 @@ class Map extends Component {
         className="map"
       >
         <TileLayer
-          attribution='&copy; <a href="http://osm.org/copyright">Amitis Hamta</a> contributors'
+          attribution='&copy; <a href="https://github.com/hamedafzali" target="_blank"> <i className="fa fa-dev"/>Hamed Afzali</a> '
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker position={position}>
-          <Popup>
-            شرکت بازرگانی آمیتیس همتا <br /> نماینده فروش انواع پایانه فروش(POS)
-            و پین پد(PinPad)
+          <Popup className="text-center">
+            <div className="row">
+              <div className="col-4">
+                <img src={logo} width={80} alt="" />
+              </div>
+              <div className="col-8">
+                شرکت بازرگانی آمیتیس همتا <br /> نماینده فروش انواع پایانه
+                فروش(POS) و پین پد(PinPad)
+              </div>
+            </div>
           </Popup>
         </Marker>
       </MapContainer>
