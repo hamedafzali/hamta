@@ -1,7 +1,7 @@
 import React from "react";
 import NewsCard from "./common/NewsCard";
-import newsimg from "../assets/images/pinpad.jpeg";
-import newsimg1 from "../assets/images/_logo.png";
+//import newsimg from "../assets/images/pinpad.jpeg";
+//import newsimg1 from "../assets/images/_logo.png";
 const News = () => {
   return (
     <React.Fragment>

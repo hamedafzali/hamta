@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
-import NavbarMenu from "./common/Navbar";
+//import NavbarMenu from "./common/Navbar";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
@@ -19,8 +19,8 @@ const Header = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="my-1 mx-2 close">بستن</span>
           <span class="navbar-toggler-icon"></span>
+          <span class="my-1 mx-2 close">X</span>
         </div>
 
         <div className="collapse navbar-collapse" id="navbarNav">

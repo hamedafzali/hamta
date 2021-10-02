@@ -327,7 +327,7 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
   //   rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .activityImage {
-  width: 60%;
+  width: 80%;
 }
 .aboutContainer {
   display: flex;
@@ -337,6 +337,7 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
   align-items: center;
   text-align: center;
   padding: 5rem;
+  width: 100%;
 }
 .aboutText {
   font-size: 1.3rem;
@@ -499,8 +500,10 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
   }
 
   .nav {
-    height: 9vh;
+    height: 8vh;
+    margin: 0;
   }
+
   .navItem {
     padding: 0.5rem 1rem;
     border-top: 1px solid $hamta_secondary;
@@ -555,7 +558,7 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
     font-size: 1.2rem;
   }
   .aboutContainer {
-    display: grid;
+    display: inline-block;
   }
 
   .map {
@@ -609,19 +612,22 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
   .nav {
     height: 10vw;
   }
-}
-@media screen and (max-width: 575px) {
-  .footer {
-    font-size: xx-small;
-    height: 30vw;
-  }
-  .newsCard {
-    font-size: medium;
-  }
-  .ad {
-    display: none;
+  .aboutContainer {
+    display: inline-block;
   }
 }
+// @media screen and (max-width: 575px) {
+//   .footer {
+//     font-size: xx-small;
+//     height: 30vw;
+//   }
+//   .newsCard {
+//     font-size: medium;
+//   }
+//   .ad {
+//     display: none;
+//   }
+// }
 
 .swiper {
   width: 100%;
@@ -656,6 +662,6 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
 }
 .mySwiper {
   height: 100%;
-  min-height: 70vh;
+  //min-height: 70vh;
   background-color: $hamta_silver;
 }
