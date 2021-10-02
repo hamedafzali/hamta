@@ -3,10 +3,13 @@ import React, { useEffect } from "react";
 // import NotificationBar from "./components/common/notificationBar";
 import { Route, Switch, Redirect } from "react-router-dom";
 import routes from "./routes";
-
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "../node_modules/font-awesome/css/font-awesome.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+//import "swiper/css/bundle";
+
 // import Main from "./components/Main";
 // import { errorChanged } from "./store/loading";
 
@@ -19,18 +22,19 @@ const App = () => {
   //     dispatch(errorChanged(false));
   //   }, [dispatch]);
   //   const isLoading = useSelector((state) => state.loadingsReducer);
-  if (new URL(window.location.href).hostname === "sanjabmarket.ir")
-    return <h1>sanjabmarket.ir</h1>;
+  // if (new URL(window.location.href).hostname === "sanjabmarket.ir")
+
   return (
-    <Switch>
-      {/* {routes.map((route, i) => (
-        <Route key={route} path={route.path} exact />
-      ))} */}
-      {routes.map((route) => (
-        <Route {...route} />
-      ))}
-      <Redirect to="/not-found" />
-    </Switch>
+    <React.Fragment>
+      <Header />
+      <Switch>
+        {routes.map((route) => (
+          <Route {...route} />
+        ))}
+        <Redirect to="/not-found" />
+      </Switch>{" "}
+      <Footer />
+    </React.Fragment>
   );
 };
 // const PersonDataMap = ({ selected }) => {

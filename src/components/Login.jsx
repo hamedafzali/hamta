@@ -1,6 +1,6 @@
 import React from "react";
 const Login = () => {
-  return <h1>Login Form</h1>;
+  return <div className="appContainer p1"></div>;
 };
 
 export default Login;

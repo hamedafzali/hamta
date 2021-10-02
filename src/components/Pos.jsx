@@ -1,6 +1,6 @@
 import React from "react";
 const Pos = () => {
-  return <h1>Pos Page</h1>;
+  return <div className="appContainer p1"></div>;
 };
 
 export default Pos;

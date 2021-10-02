@@ -1,8 +1,8 @@
-const NewsCard = ({ src, description }) => {
+const NewsCard = ({ src, description, ...rest }) => {
   return (
-    <div className="newsCard newsCardW">
-      <img src={src} alt="" className="newsCardImage" />
-      <p>{description}</p>
+    <div className="newsCard newsCardW " {...rest}>
+      {/* <img src={src} alt="" className="newsCardImage" />
+      <p>{description}</p> */}
     </div>
   );
 };

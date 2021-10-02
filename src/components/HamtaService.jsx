@@ -1,6 +1,6 @@
 import React from "react";
 const HamtaService = () => {
-  return <h1>Hamta Service Page</h1>;
+  return <div className="appContainer p1"></div>;
 };
 
 export default HamtaService;
