@@ -20,7 +20,7 @@ const Header = () => {
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-          <span class="my-1 mx-2 close">X</span>
+          {/* <span class="my-1 mx-2 close">X</span> */}
         </div>
 
         <div className="collapse navbar-collapse" id="navbarNav">
