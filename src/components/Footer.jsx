@@ -3,25 +3,29 @@ const Footer = () => {
   return (
     <div>
       <div className="footer ">
-        <div className="footerContent">
-          <div className="text-white">
+        <div className="footerContent ">
+          <div className="">
             <div className="my-2">
               آدرس:
-              <br /> تهران، خیابان بهشتی، خیابان قنبرزاده، نبش خرمشهر <br />{" "}
-              پلاک 222 طبقه اول
+              <br /> تهران، خیابان خرمشهر، تقاطع قنبرزاده، ساختمان نگین سبز پلاک
+              222 طبقه اول
               <br /> <br />
             </div>
 
             <div className="my-2">
               تلفن تماس:
               <br />
-              02188763610 <br /> 02158702
+              <strong>02158702</strong>
+              <br />
+              02188769497 - 02188763610
+              <br />
+              02188749601 - 02188749603
             </div>
             <br />
             <div className="my-2">
               کد پستی :
               <br />
-              1555555555
+              1533743518
             </div>
             {/* <div>
             <div className="fa-stack fa-lg mx-2">
@@ -52,7 +56,52 @@ const Footer = () => {
           </div> */}
           </div>
 
-          <div className="text-white">لینکهای مرتبط</div>
+          <div>
+            <div>لینکهای مرتبط</div>
+            <hr />
+            <div
+              className="outLink"
+              onClick={() => window.open("http://www.shatel.ir")}
+            >
+              شاتل
+            </div>
+            <div
+              className="outLink"
+              onClick={() => window.open("https://pna.co.ir/")}
+            >
+              پرداخت نوین
+            </div>
+            <div
+              className="outLink"
+              onClick={() => window.open("https://sadadpsp.ir/")}
+            >
+              سداد
+            </div>
+            <div
+              className="outLink"
+              onClick={() => window.open("https://sayancard.ir/")}
+            >
+              سایان
+            </div>
+            <div
+              className="outLink"
+              onClick={() => window.open("http://www.kpec-co.com/fa/index.php")}
+            >
+              پارسیان کیش
+            </div>
+            <div
+              className="outLink"
+              onClick={() => window.open("https://www.karafarinbank.ir/")}
+            >
+              بانک کارآفرین
+            </div>
+            <div
+              className="outLink"
+              onClick={() => window.open("https://negah-pay.com/")}
+            >
+              نگاه پرداخت کارآفرین
+            </div>
+          </div>
         </div>
         {/* <Map /> */}
       </div>

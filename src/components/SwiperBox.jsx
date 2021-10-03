@@ -25,7 +25,7 @@ const SwiperBox = () => {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 6000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -40,9 +40,12 @@ const SwiperBox = () => {
         <SwiperSlide>
           <img src={Banner2} alt="" className="mylogo" />
         </SwiperSlide>
-        {/* <SwiperSlide>
+        <SwiperSlide>
+          <img src={Banner1} alt="" className="mylogo" />
+        </SwiperSlide>
+        <SwiperSlide>
           <img src={Banner2} alt="" className="mylogo" />
-        </SwiperSlide> */}
+        </SwiperSlide>
       </Swiper>
     </>
   );

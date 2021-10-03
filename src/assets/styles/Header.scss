@@ -3,7 +3,7 @@ $hamta_font_text: "WOFF IRANSansXFaNum-Regular";
 $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
 .nav {
   position: absolute;
-  background-color: $hamta_white;
+  //background-color: $hamta_white;
   display: flex;
   margin: 3.5vw 0 0 0;
   //border-radius: 0.5rem;
@@ -14,6 +14,19 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
   width: 100vw;
   z-index: 99999;
 }
+.nav1 {
+  height: 7vw;
+  background-color: $hamta_white;
+  width: 47vw;
+  padding-top: 1.2vw;
+}
+.navLogoContainer {
+  height: 7vw;
+  background-color: $hamta_white;
+}
+.navbar-nav {
+  position: relative;
+}
 // .navbar-toggler > .close {
 //   display: inline;
 //   font-size: smaller;
@@ -23,12 +36,13 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
 //   display: none;
 // }
 .logo {
-  //width: 10rem;
-  height: 70%;
+  width: 14vw;
+  //height: 70%;
   //margin: 0.5rem;
   //position: absolute;
   // right: 0;
-  margin: 0.5rem 2rem;
+  margin: 0.5rem 2rem 0.5rem 4rem;
+
   background-color: $hamta_white;
 }
 // .mylogo {
@@ -53,10 +67,11 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
 .p2 {
   background-color: $hamta_silver;
 }
-.btnContainer {
+.btnContainer1 {
   display: flex;
-  position: absolute;
-  left: 0;
+}
+.btnContainer2 {
+  display: none;
 }
 .hbtn {
   font-family: $hamta_font_title;
@@ -78,10 +93,20 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
   transition: 0.3s;
 }
 .hbtn1 {
-  margin: 0rem 2vw 0 20vw;
+  margin: 0rem 1vw 0 0;
+  border-radius: 1rem;
 }
-.hbtn1 {
-  margin: 0rem 2vw 0 10vw;
+.hbtn2 {
+  margin: 0rem 1vw 0 0;
+  border-radius: 1rem;
+}
+.hbtn3 {
+  margin: 0rem 1vw 0 0vw;
+  background-color: $hamta_white;
+  width: 15vw;
+}
+.navbar-collapse {
+  display: flex;
 }
 .BlueBoxContainer {
   //flex: 1;
@@ -128,20 +153,23 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-color: $hamta_dark;
+  background-color: $hamta_darkblue;
   //border-radius: 2rem 2rem 0 0;
   //height: fit-content;
   //text-align: right;
   font-size: 0.8rem;
   height: 50vh;
 }
-
+.outLink {
+  cursor: pointer;
+  text-decoration: none;
+}
 .footerContent {
   padding: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
+  color: $hamta_white;
   text-align: right;
   font-size: larger;
 }
@@ -234,7 +262,7 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
   align-items: center;
   display: grid;
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   // grid-template-rows: 40vw;
   // grid-auto-rows: 40vw;
   // grid-gap: 15px;
@@ -242,7 +270,7 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
 .newsTitle {
   background-color: $hamta_blue;
   font-family: $hamta_font_bold;
-  padding: 1rem 15vw;
+  padding: 1rem 20vw;
   font-size: 1.2rem;
   display: block;
   flex-direction: row;
@@ -251,22 +279,27 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
   color: $hamta_white;
 }
 .newsCard {
-  align-self: center;
+  //align-self: right;
   justify-self: center;
-  width: 35vw;
-  height: 50vw;
-  margin: 0.5rem;
+  width: 27vw;
+  height: 35vw;
+  margin: 1rem;
   justify-content: center;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1.5vw;
+  font-family: $hamta_font_bold;
+  color: $hamta_blue;
   padding: 0.5rem 0 0 0;
   border: 2px solid $hamta_blue;
-
   position: relative;
-
   overflow: hidden;
+  cursor: pointer;
 }
-
+.newsCard:hover {
+  background-color: $hamta_blue;
+  color: $hamta_white;
+  transition: 0.3s;
+}
 .newsCard:after {
   content: "d";
   width: 0;
@@ -298,19 +331,15 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
 }
 .newsCard p {
   text-align: justify;
-  padding-inline: 1rem;
+  //padding-inline: 2rem;
+  margin: 2rem;
   //display: block;
   //width: 100px;
   overflow: hidden;
   //white-space: nowrap;
   text-overflow: ellipsis;
 }
-.newsCardW {
-  background-color: $hamta_white;
-}
-.newsCardO {
-  background-color: $hamta_lightorange;
-}
+
 .newsCardImage {
   width: 60%;
   //height: 40%;
@@ -335,12 +364,15 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
 .aboutImageContainer {
   justify-content: center;
   align-items: center;
+  justify-items: center;
+  align-content: center;
   text-align: center;
-  padding: 5rem;
+  vertical-align: middle;
+  //padding: 1rem;
   width: 100%;
 }
 .aboutText {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-align: justify;
   margin: 1vw 8vw 0 0;
   font-family: $hamta_font_bold;
@@ -353,12 +385,12 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
 }
 .navItem {
   color: $hamta_black;
-  background-color: white;
+  //background-color: white;
   border: 0;
-  padding: 1rem 1.2vw;
-  font-size: 0.9rem;
+  padding: 1rem 1vw;
+  font-size: 1.2vw;
   font-weight: 800;
-  font-family: $hamta_font_title;
+  font-family: $hamta_font_bold;
   //border-right: 1px solid $secondary;
   cursor: pointer;
   //margin-top: 0.3rem;
@@ -469,7 +501,7 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
 .contactUsImg {
   width: 100%;
 }
-@media screen and (orientation: portrait) and (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .appContainer {
     //border: 1px solid lightgray;
     //background-color: white;
@@ -478,36 +510,53 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
     overflow: hidden;
     height: 100%;
   }
-  .btnContainer {
+  .btnContainer1 {
     //position: relative;
+    display: none;
+    //width: 100%;
+    //padding: 0 2vw;
+  }
+  .btnContainer2 {
+    position: relative;
     display: block;
     width: 100%;
     //padding: 0 2vw;
   }
   .hbtn {
     //display: block;
+    //position: relative;
     width: 100%;
     height: 6vh;
     margin: 0;
-    margin-top: 2px;
+    //margin-top: 2px;
     border: 1px solid $hamta_blue;
-    //border-radius: 5%;
+    border-radius: 0;
     //background-color: #04aa6d;
     //padding: 14px 28px;
     font-size: 2.5vw;
     //cursor: pointer;
     //text-align: center;
   }
-
-  .nav {
-    height: 8vh;
-    margin: 0;
+  .logo {
+    width: 20vw;
   }
-
+  .nav {
+    height: 9vh;
+    margin: 0;
+    position: sticky;
+  }
+  .nav1 {
+    width: 100%;
+    //padding-top: 1.2vw;
+    //position: relative;
+  }
   .navItem {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     border-top: 1px solid $hamta_secondary;
-    text-align: right;
+    //text-align: right;
+    font-size: 1.1rem;
+    position: relative;
+    background-color: white;
   }
   .navItem:hover {
     background-color: $hamta_secondary !important;
@@ -579,43 +628,51 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
   .contactUsTitle {
     font-size: 5vw;
   }
-}
-@media screen and (orientation: landscape) and (max-width: 991px) {
-  .appContainer {
-    //border: 1px solid lightgray;
-    //background-color: white;
-    //margin: 1rem;
-    //border-radius: 1rem;
-    overflow: hidden;
-    height: 100%;
+  .newsCard {
+    display: flex;
   }
-  .btnContainer {
-    //position: relative;
-    display: block;
-    width: 100%;
-    //padding: 0 2vw;
-  }
-  .hbtn {
-    //display: block;
-    width: 100%;
-    height: 6vw;
+  .newsCard p {
     margin: 0;
-    margin-top: 2px;
-    border: 1px solid $hamta_blue;
-    //border-radius: 5%;
-    //background-color: #04aa6d;
-    //padding: 14px 28px;
-    font-size: 2.5vw;
-    //cursor: pointer;
-    //text-align: center;
-  }
-  .nav {
-    height: 10vw;
-  }
-  .aboutContainer {
-    display: inline-block;
+    font-size: 3vw;
   }
 }
+// @media screen and (orientation: landscape) and (max-width: 767px) {
+//   .appContainer {
+//     //border: 1px solid lightgray;
+//     //background-color: white;
+//     //margin: 1rem;
+//     //border-radius: 1rem;
+//     overflow: hidden;
+//     height: 100%;
+//   }
+//   .btnContainer {
+//     //position: relative;
+//     display: block;
+//     width: 100%;
+//     //padding: 0 2vw;
+//   }
+//   .hbtn {
+//     //display: block;
+//     width: 100%;
+//     height: 6vw;
+//     margin: 0;
+//     margin-top: 2px;
+//     border: 1px solid $hamta_blue;
+//     //border-radius: 5%;
+//     //background-color: #04aa6d;
+//     //padding: 14px 28px;
+//     font-size: 2.5vw;
+//     //cursor: pointer;
+//     //text-align: center;
+//   }
+//   .nav {
+//     height: 10vw;
+//     background-color: $hamta_white;
+//   }
+//   .aboutContainer {
+//     display: inline-block;
+//   }
+// }
 // @media screen and (max-width: 575px) {
 //   .footer {
 //     font-size: xx-small;

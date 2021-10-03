@@ -7,8 +7,10 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <React.Fragment>
-      <nav className="navbar navbar-expand-lg navbar-light nav p-0">
-        <img src={logo} className="logo" alt="" />
+      <nav className="navbar navbar-expand-md navbar-light nav p-0">
+        <div className="navLogoContainer">
+          <img src={logo} className="logo" alt="" />
+        </div>
 
         <div
           className="navbar-toggler navbarToggler "
@@ -24,26 +26,37 @@ const Header = () => {
         </div>
 
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className=" navbar-nav p-0">
-            <Link to="/" className="Link">
-              <li className="nav-item active navItem ">خانه</li>
-            </Link>
-            <Link to="/pos" className="Link">
-              <li className="nav-item navItem">کارتخوان</li>
-            </Link>
-            <Link to="/atm" className="Link">
-              <li className="nav-item navItem">خودپرداز</li>
-            </Link>
-            <Link to="/hamtaservice" className="Link">
-              <li className="nav-item navItem">همتا سرویس</li>
-            </Link>
-            <Link to="/contactus" className="Link">
-              <li className="nav-item navItem">تماس با ما</li>
-            </Link>
-          </ul>
-          <div className="btnContainer">
+          <div className="nav1">
+            <ul className=" navbar-nav p-0">
+              <Link to="/" className="Link">
+                <li className="nav-item active navItem ">خانه</li>
+              </Link>
+              <Link to="/pos" className="Link">
+                <li className="nav-item navItem">کارتخوان</li>
+              </Link>
+              <Link to="/atm" className="Link">
+                <li className="nav-item navItem">خودپرداز</li>
+              </Link>
+              <div
+                className="outLink"
+                onClick={() => window.open("http://www.hamta-service.com")}
+              >
+                <li className="nav-item navItem">همتا سرویس</li>
+              </div>
+              <Link to="/contactus" className="Link">
+                <li className="nav-item navItem">تماس با ما</li>
+              </Link>
+            </ul>
+            <div className="btnContainer2">
+              <div className=" hbtn hbtn2">پورتال نمایندگان</div>
+              <div className=" hbtn hbtn1">فروشگاه</div>
+              <div className="  hbtn3"></div>
+            </div>
+          </div>
+          <div className="btnContainer1">
             <div className=" hbtn hbtn2">پورتال نمایندگان</div>
             <div className=" hbtn hbtn1">فروشگاه</div>
+            <div className="  hbtn3"></div>
           </div>
         </div>
       </nav>

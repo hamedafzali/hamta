@@ -16,7 +16,7 @@ const Main = () => {
       <div className="appContainer p1">
         <div className="imgContainer">
           <div className="text-center">
-            <SwiperBox />;
+            <SwiperBox />
           </div>
           <div className="BlueBoxContainer">
             <BlueBox text="درخواست خودپرداز">
@@ -43,7 +43,6 @@ const Main = () => {
             {/* <p> معرفی شرکت آمیتیس همتا </p>
             <p>(هسته مرکزی تراکنش های الکترونیکی):</p> */}
             <div>
-              شرکت آمیتیس همتا ، در راستای بسط و توسعه سیاستهای کلی کشور و جهت
               شرکت آمیتیس همتا ، در راستای بسط و توسعه سیاست های کلی کشور و جهت
               راه‌اندازی کسب و کارهای الکترونیکی و مجازی در حوزه تراکنش‌های مالی
               و بانکی با استفاده از ابزارهای مربوطه و با هدف ایجاد اشتغالزایی
@@ -66,7 +65,7 @@ const Main = () => {
       <div className="p2">
         <div className="aboutContainer aboutText">
           <div className="m-3 text-justify">
-            <p>اقدامات شرکت همتا</p>
+            <p>سوابق، تجربیات و عملکرد</p>
 
             <div>
               <div>سوابق ، تجربیات و عملکرد :</div>
