@@ -9,5 +9,13 @@ body {
   font-family: "WOFF IRANSansXFaNum-Regular", sans-serif;
   direction: rtl;
   background-color: $hamta_white;
+  margin: 0;
+
   //background: $hamta_white; //linear-gradient(90deg, $dark 0%, $white 100%);
 }
+// @media screen and (min-width: 1150px) {
+//   body {
+//     max-width: 1150px;
+//     margin: auto;
+//   }
+// }
