@@ -48,12 +48,14 @@ const Header = () => {
               </Link>
             </ul>
             <div className="btnContainer2">
+              <div className=" hbtn hbtn4">پنل همتا</div>
               <div className=" hbtn hbtn2">پورتال نمایندگان</div>
               <div className=" hbtn hbtn1">فروشگاه</div>
               <div className="  hbtn3"></div>
             </div>
           </div>
           <div className="btnContainer1">
+            <div className=" hbtn hbtn4">پنل همتا</div>
             <div className=" hbtn hbtn2">پورتال نمایندگان</div>
             <div className=" hbtn hbtn1">فروشگاه</div>
             <div className="  hbtn3"></div>

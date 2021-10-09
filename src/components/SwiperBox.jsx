@@ -1,5 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import Banner from "../assets/images/12.png";
 import Banner1 from "../assets/images/Banner1.png";
 import Banner2 from "../assets/images/Banner2.png";
 
@@ -35,17 +36,17 @@ const SwiperBox = () => {
         className="mySwiper"
       >
         <SwiperSlide>
+          <img src={Banner} alt="" className="mylogo" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Banner} alt="" className="mylogo" />
+        </SwiperSlide>
+        {/* <SwiperSlide>
           <img src={Banner1} alt="" className="mylogo" />
         </SwiperSlide>
         <SwiperSlide>
           <img src={Banner2} alt="" className="mylogo" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Banner1} alt="" className="mylogo" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Banner2} alt="" className="mylogo" />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </>
   );
