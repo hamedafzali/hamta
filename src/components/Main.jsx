@@ -30,6 +30,12 @@ const Main = () => {
             <BlueBox text="درخواست کارتخوان">
               <img src={pointofsale} alt="" className="BlueBoxImg" />
             </BlueBox>
+            <BlueBox text="باکس جدید">
+              <img src={pointofsale} alt="" className="BlueBoxImg" />
+            </BlueBox>
+            {/* <BlueBox text="باکس جدید">
+              <img src={pointofsale} alt="" className="BlueBoxImg" />
+            </BlueBox> */}
           </div>
         </div>
       </div>

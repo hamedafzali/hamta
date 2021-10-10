@@ -33,7 +33,9 @@ const News = () => {
           <NewsBox />
         </div>
 
-        <div className="archiveBtn">آرشیو</div>
+        <div className="archiveBtn" onClick={() => window.open("/newsarchive")}>
+          آرشیو
+        </div>
       </div>
     </React.Fragment>
   );

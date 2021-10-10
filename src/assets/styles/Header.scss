@@ -1,6 +1,7 @@
 $hamta_font_title: "WOFF IRANSansXFaNum-Black";
 $hamta_font_text: "WOFF IRANSansXFaNum-Regular";
 $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
+$nav_height: 4vw;
 .nav {
   position: absolute;
   //background-color: $hamta_white;
@@ -10,18 +11,18 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
   //border-bottom-right-radius: 2rem;
   //border-top-left-radius: 2rem;
   white-space: nowrap;
-  height: 4vw;
-  width: 100vw;
+  height: $nav_height;
+  //width: 100vw;
   z-index: 99999;
 }
 .nav1 {
-  height: 4vw;
+  height: $nav_height;
   background-color: $hamta_white;
   width: 55vw;
   padding-top: 1.2vw;
 }
 .navLogoContainer {
-  height: 4vw;
+  height: $nav_height;
   background-color: $hamta_white;
 }
 .navbar-nav {
@@ -41,7 +42,7 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
   //margin: 0.5rem;
   //position: absolute;
   // right: 0;
-  margin: 0.5rem 2rem 0.5rem 4rem;
+  margin: 0.5vw 3vw 0.5vw 5vw;
 
   background-color: $hamta_white;
 }
@@ -77,7 +78,7 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
   font-family: $hamta_font_title;
   background-color: $hamta_orange;
   color: $hamta_white;
-  height: 4vw;
+  height: $nav_height;
   width: 4vw;
   white-space: initial;
   font-size: 0.9vw;
@@ -93,20 +94,20 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
   transition: 0.3s;
 }
 .hbtn1 {
-  margin: 0rem 1vw 0 0;
+  margin: 0 1vw 0 0;
   border-radius: 0.5rem;
 }
 .hbtn2 {
-  margin: 0rem 1vw 0 0;
+  margin: 0 1vw 0 0;
   border-radius: 0.5rem;
 }
 .hbtn3 {
-  margin: 0rem 1vw 0 0vw;
+  margin: 0 1vw 0 0vw;
   background-color: $hamta_white;
   width: 11vw;
 }
 .hbtn4 {
-  margin: 0rem 1vw 0 0;
+  margin: 0 1vw 0 0;
   border-radius: 0.5rem;
 }
 .navbar-collapse {
@@ -117,6 +118,7 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
   display: flex;
   flex-direction: row;
   justify-content: center;
+
   //background-color: yellow;
 }
 .BlueBox {
@@ -124,7 +126,7 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
   height: 7vw !important;
   background-color: $hamta_blue;
   border-radius: 2.9vw;
-  margin: 1rem 5vw;
+  margin: 1rem 3vw;
   padding: 5%;
   justify-content: center;
   display: flex;
@@ -367,7 +369,7 @@ $hamta_font_bold: "WOFF IRANSansXFaNum-Bold";
 }
 .aboutContainer {
   display: flex;
-  text-indent: -15px;
+  //text-indent: -15px;
   margin-top: 2rem;
   line-height: 2.5rem;
 }
